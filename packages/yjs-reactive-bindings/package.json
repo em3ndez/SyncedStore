@@ -1,22 +1,25 @@
 {
   "name": "@syncedstore/yjs-reactive-bindings",
   "description": "A bridge between Reactive programming libraries (reactive, Vue or MobX) and Yjs",
-  "version": "0.4.2",
+  "version": "0.6.0",
   "private": false,
   "main": "dist/yjs-reactive-bindings.js",
   "module": "dist/yjs-reactive-bindings.module.js",
   "umd:main": "dist/yjs-reactive-bindings.umd.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "require": "./dist/yjs-reactive-bindings.js",
+    "default": "./dist/yjs-reactive-bindings.modern.mjs"
+  },
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "license": "MIT",
-  "dependencies": {
-    "@types/eslint": "6.8.0"
-  },
   "peerDependencies": {
     "yjs": "^13.5.13"
   },
   "devDependencies": {
-    "microbundle": "^0.13.0",
+    "@types/eslint": "6.8.0",
+    "microbundle": "^0.15.1",
     "mobx": "^6.3.5",
     "rimraf": "^3.0.2"
   },
@@ -55,6 +58,5 @@
     "observable",
     "yjs",
     "crdt"
-  ],
-  "gitHead": "5aecc6d5a337f243c8afd312f271e90eabd221e8"
+  ]
 }

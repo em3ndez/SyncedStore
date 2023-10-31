@@ -16,11 +16,16 @@
     "shared editing",
     "svelte"
   ],
-  "version": "0.4.2",
+  "version": "0.6.0",
   "private": false,
   "main": "dist/syncedstore-svelte.js",
   "module": "dist/syncedstore-svelte.module.js",
   "umd:main": "dist/syncedstore-svelte.umd.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "require": "./dist/syncedstore-svelte.js",
+    "default": "./dist/syncedstore-svelte.modern.mjs"
+  },
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "license": "MIT",
@@ -30,9 +35,9 @@
     "svelte": "*"
   },
   "devDependencies": {
-    "@reactivedata/reactive": "0.2.0",
-    "@syncedstore/core": "^0.4.2",
-    "microbundle": "^0.13.0",
+    "@reactivedata/reactive": "^0.2.0",
+    "@syncedstore/core": "^0.6.0",
+    "microbundle": "^0.15.1",
     "rimraf": "^3.0.2",
     "svelte": "*"
   },

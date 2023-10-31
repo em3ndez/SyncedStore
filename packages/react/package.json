@@ -19,24 +19,29 @@
     "offline",
     "shared editing"
   ],
-  "version": "0.4.2",
+  "version": "0.6.0",
   "private": false,
   "main": "dist/syncedstore-react.js",
   "module": "dist/syncedstore-react.module.js",
   "umd:main": "dist/syncedstore-react.umd.js",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "require": "./dist/syncedstore-react.js",
+    "default": "./dist/syncedstore-react.modern.mjs"
+  },
   "source": "src/index.ts",
   "types": "types/index.d.ts",
   "license": "MIT",
   "dependencies": {
-    "@reactivedata/react": "0.2.1",
-    "@types/eslint": "6.8.0"
+    "@reactivedata/react": "^0.2.1"
   },
   "peerDependencies": {
     "@syncedstore/core": "*"
   },
   "devDependencies": {
-    "@syncedstore/core": "^0.4.2",
-    "microbundle": "^0.13.0",
+    "@syncedstore/core": "^0.6.0",
+    "@types/eslint": "^6.8.0",
+    "microbundle": "^0.15.1",
     "rimraf": "^3.0.2"
   },
   "scripts": {
@@ -65,6 +70,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "gitHead": "5aecc6d5a337f243c8afd312f271e90eabd221e8"
+  }
 }
